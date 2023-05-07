@@ -1,0 +1,11 @@
+<template>
+   <lightning-card title="Birthday Report" icon-name="custom:custom14">
+   <template if:true={conList}>
+       <lightning-datatable data={conList} columns={columns} key-field="Id">
+       </lightning-datatable>
+   </template>
+   <template if:true={error}>
+       {error}
+   </template>
+   </lightning-card>
+</template>
